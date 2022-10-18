@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+body {
+    font-family: "Muli", sans-serif;
+    font-weight: 300;
+}
+
+$primary: #ff8707;
+$danger: #ff4136;
+$success: #2ecc40;
+$warning: #ff851b;
+$light: #f4f4f4;
+$dark: #111;
+$secondary:#111 ;
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+.carousel-caption{
+    top: 20px !important;
+}
