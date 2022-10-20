@@ -25,17 +25,15 @@ const contact = () => {
   return (
     <>
       <Head>
-        <title>Contact -- BANIDB.com </title>
-       {" "}
-      </Head>
-     {" "}
+        <title>Contact -- BANIDB.com </title>{" "}
+      </Head>{" "}
       <div className="container px-5 py-5 ">
-       {" "}
         <div className="container px-5 ">
+        <h1 className="fs-3 py-3">CONTACT US</h1>
           <form onSubmit={formik.handleSubmit}>
             <div class="mb-3 ">
               <label for="name" class="form-label">
-                Your Name (required)
+                Your Name <span className="text-danger">*</span>
               </label>
               <input
                 type="text"
@@ -43,7 +41,6 @@ const contact = () => {
                 onChange={formik.handleChange}
                 value={formik.values.name}
                 class=" form-control w-auto "
-                id="name"
                 placeholder="Your Name"
                 {...formik.getFieldProps("name")}
               />
@@ -53,7 +50,7 @@ const contact = () => {
             </div>{" "}
             <div class="mb-3 ">
               <label for="email" class="form-label">
-              Your Email (required)
+                Your Email <span className="text-danger">*</span>
               </label>
               <input
                 type="email"
@@ -61,7 +58,6 @@ const contact = () => {
                 onChange={formik.handleChange}
                 value={formik.values.email}
                 class=" form-control w-auto "
-                id="name"
                 placeholder="Email"
                 {...formik.getFieldProps("email")}
               />
@@ -70,14 +66,10 @@ const contact = () => {
               ) : null}
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"></label>
-              <input
-                name="subject"
-                type="text"
-                class=" form-control w-auto"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
+              <label for="exampleFormControlInput1" class="form-label">
+                Subject
+              </label>
+              <input name="subject" type="text" class=" form-control w-auto" />
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">
@@ -86,7 +78,6 @@ const contact = () => {
               <textarea
                 name="message"
                 class="form-control w-50 h-50"
-                id="exampleFormControlTextarea1"
                 rows="6"
               ></textarea>
             </div>

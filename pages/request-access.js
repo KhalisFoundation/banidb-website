@@ -33,8 +33,10 @@ const requestAccess = () => {
       </Head>
 
       <div className="container px-5 py-5 ">
+      
         <div className="container px-5 ">
-          <form onSubmit={formik.handleSubmit}>
+        <h1 className="fs-3 py-3">BECOME A PARTNER
+</h1>   <form onSubmit={formik.handleSubmit}>
             <div class="mb-3 ">
               <label for="name" class="form-label">
                 Your Name <span className="text-danger">*</span>
