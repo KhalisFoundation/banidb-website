@@ -35,8 +35,8 @@ const SignupForm = () => {
         <div className="container px-5 ">
           <h1 className="fs-3 py-3">BECOME A PARTNER</h1>{" "}
           <form onSubmit={formik.handleSubmit}>
-            <div class="mb-3 ">
-              <label for="name" class="form-label">
+            <div className="mb-3 ">
+              <label htmlFor=" name" className="form-label">
                 Your Name <span className="text-danger">*</span>
               </label>
               <input
@@ -44,7 +44,7 @@ const SignupForm = () => {
                 name="name"
                 onChange={formik.handleChange}
                 value={formik.values.name}
-                class=" form-control w-auto "
+                className=" form-control w-auto "
                 id="name"
                 placeholder="Your Name"
                 {...formik.getFieldProps("name")}
@@ -53,8 +53,8 @@ const SignupForm = () => {
                 <div className="text-danger">{formik.errors.name}</div>
               ) : null}
             </div>
-            <div class="mb-3 ">
-              <label for="email" class="form-label">
+            <div className="mb-3 ">
+              <label htmlFor=" email" className="form-label">
                 Your Email <span className="text-danger">*</span>
               </label>
               <input
@@ -62,7 +62,7 @@ const SignupForm = () => {
                 name="email"
                 onChange={formik.handleChange}
                 value={formik.values.email}
-                class=" form-control w-auto "
+                className=" form-control w-auto "
                 id="name"
                 placeholder="Email"
                 {...formik.getFieldProps("email")}
@@ -71,8 +71,8 @@ const SignupForm = () => {
                 <div className="text-danger">{formik.errors.email}</div>
               ) : null}
             </div>
-            <div class="mb-3 ">
-              <label for="name" class="form-label">
+            <div className="mb-3 ">
+              <label htmlFor=" name" className="form-label">
                 Your Telephone Number<span className="text-danger">*</span>
               </label>
               <input
@@ -80,21 +80,21 @@ const SignupForm = () => {
                 name="phoneNum"
                 onChange={formik.handleChange}
                 value={formik.values.phoneNum}
-                class=" form-control w-auto "
+                className=" form-control w-auto "
                 {...formik.getFieldProps("phoneNum")}
               />
               {formik.touched.phoneNum && formik.errors.phoneNum ? (
                 <div className="text-danger">{formik.errors.phoneNum}</div>
               ) : null}
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">
+            <div className="mb-3">
+              <label htmlFor=" exampleFormControlInput1" className="form-label">
                 Your Location <span className="text-danger">*</span>
               </label>
               <input
                 name="location"
                 type="text"
-                class=" form-control w-auto"
+                className=" form-control w-auto"
                 onChange={formik.handleChange}
                 value={formik.values.location}
                 {...formik.getFieldProps("location")}
@@ -103,14 +103,14 @@ const SignupForm = () => {
                 <div className="text-danger">{formik.errors.location}</div>
               ) : null}
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">
+            <div className="mb-3">
+              <label htmlFor=" exampleFormControlInput1" className="form-label">
                 Name of App/Project <span className="text-danger">*</span>
               </label>
               <input
                 name="nameOfApp"
                 type="text"
-                class=" form-control w-auto"
+                className=" form-control w-auto"
                 onChange={formik.handleChange}
                 value={formik.values.nameOfApp}
                 {...formik.getFieldProps("nameOfApp")}
@@ -119,18 +119,23 @@ const SignupForm = () => {
                 <div className="text-danger">{formik.errors.nameOfApp}</div>
               ) : null}
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">
+            <div className="mb-3 col-md-6">
+              <label
+                htmlFor=" exampleFormControlTextarea1"
+                className="form-label"
+              >
                 What is the purpose of your application?
               </label>
               <textarea
                 name="appPurpse"
-                class="form-control w-50 h-50"
-                id="exampleFormControlTextarea1"
+                className="form-control "
                 rows="6"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary text-light fw-bold">
+            <button
+              type="submit"
+              className="btn btn-primary text-light fw-bold"
+            >
               Submit
             </button>
           </form>
@@ -178,8 +183,8 @@ const RequestAccess = () => {
         <div className="container px-5 ">
           <h1 className="fs-3 py-3">BECOME A PARTNER</h1>{" "}
           <form onSubmit={formik.handleSubmit}>
-            <div class="mb-3 ">
-              <label for="name" class="form-label">
+            <div className="mb-3 ">
+              <label htmlFor=" name" className="form-label">
                 Your Name <span className="text-danger">*</span>
               </label>
               <input
@@ -187,7 +192,7 @@ const RequestAccess = () => {
                 name="name"
                 onChange={formik.handleChange}
                 value={formik.values.name}
-                class=" form-control w-auto "
+                className=" form-control w-auto "
                 id="name"
                 placeholder="Your Name"
                 {...formik.getFieldProps("name")}
@@ -196,8 +201,8 @@ const RequestAccess = () => {
                 <div className="text-danger">{formik.errors.name}</div>
               ) : null}
             </div>
-            <div class="mb-3 ">
-              <label for="email" class="form-label">
+            <div className="mb-3 ">
+              <label for="email" className="form-label">
                 Your Email <span className="text-danger">*</span>
               </label>
               <input
@@ -205,7 +210,7 @@ const RequestAccess = () => {
                 name="email"
                 onChange={formik.handleChange}
                 value={formik.values.email}
-                class=" form-control w-auto "
+                className=" form-control w-auto "
                 id="name"
                 placeholder="Email"
                 {...formik.getFieldProps("email")}
@@ -214,8 +219,8 @@ const RequestAccess = () => {
                 <div className="text-danger">{formik.errors.email}</div>
               ) : null}
             </div>
-            <div class="mb-3 ">
-              <label for="name" class="form-label">
+            <div className="mb-3 ">
+              <label for="name" className="form-label">
                 Your Telephone Number<span className="text-danger">*</span>
               </label>
               <input
@@ -223,21 +228,21 @@ const RequestAccess = () => {
                 name="phoneNum"
                 onChange={formik.handleChange}
                 value={formik.values.phoneNum}
-                class=" form-control w-auto "
+                className=" form-control w-auto "
                 {...formik.getFieldProps("phoneNum")}
               />
               {formik.touched.phoneNum && formik.errors.phoneNum ? (
                 <div className="text-danger">{formik.errors.phoneNum}</div>
               ) : null}
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">
+            <div className="mb-3">
+              <label for="exampleFormControlInput1" className="form-label">
                 Your Location <span className="text-danger">*</span>
               </label>
               <input
                 name="location"
                 type="text"
-                class=" form-control w-auto"
+                className=" form-control w-auto"
                 onChange={formik.handleChange}
                 value={formik.values.location}
                 {...formik.getFieldProps("location")}
@@ -246,14 +251,14 @@ const RequestAccess = () => {
                 <div className="text-danger">{formik.errors.location}</div>
               ) : null}
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">
+            <div className="mb-3">
+              <label for="exampleFormControlInput1" className="form-label">
                 Name of App/Project <span className="text-danger">*</span>
               </label>
               <input
                 name="nameOfApp"
                 type="text"
-                class=" form-control w-auto"
+                className=" form-control w-auto"
                 onChange={formik.handleChange}
                 value={formik.values.nameOfApp}
                 {...formik.getFieldProps("nameOfApp")}
@@ -262,18 +267,18 @@ const RequestAccess = () => {
                 <div className="text-danger">{formik.errors.nameOfApp}</div>
               ) : null}
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">
+            <div className="mb-3">
+              <label for="exampleFormControlTextarea1" className="form-label">
                 What is the purpose of your application?
               </label>
               <textarea
                 name="appPurpse"
-                class="form-control w-50 h-50"
+                className="form-control w-50 h-50"
                 id="exampleFormControlTextarea1"
                 rows="6"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary text-light fw-bold">
+            <button type="submit" className="btn btn-primary text-light fw-bold">
               Submit
             </button>
           </form>

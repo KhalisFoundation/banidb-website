@@ -31,9 +31,10 @@ const SignupForm = () => {
       </Head>
       <div className="container px-5 py-5 ">
         <div className="container px-5 ">
+          <h1 className="fs-3 py-3">CONTACT</h1>{" "}
           <form onSubmit={formik.handleSubmit}>
-            <div class="mb-3 ">
-              <label for="name" class="form-label">
+            <div className="mb-3 ">
+              <label htmlFor=" name" className="form-label">
                 Your Name <span className="text-danger">*</span>
               </label>
               <input
@@ -41,7 +42,7 @@ const SignupForm = () => {
                 name="name"
                 onChange={formik.handleChange}
                 value={formik.values.name}
-                class=" form-control w-auto "
+                className=" form-control w-auto "
                 placeholder="Your Name"
                 {...formik.getFieldProps("name")}
               />
@@ -49,8 +50,8 @@ const SignupForm = () => {
                 <div className="text-danger">{formik.errors.name}</div>
               ) : null}
             </div>{" "}
-            <div class="mb-3 ">
-              <label for="email" class="form-label">
+            <div className="mb-3 ">
+              <label htmlFor=" email" className="form-label">
                 Your Email <span className="text-danger">*</span>
               </label>
               <input
@@ -58,7 +59,7 @@ const SignupForm = () => {
                 name="email"
                 onChange={formik.handleChange}
                 value={formik.values.email}
-                class=" form-control w-auto "
+                className=" form-control w-auto "
                 placeholder="Email"
                 {...formik.getFieldProps("email")}
               />
@@ -66,23 +67,33 @@ const SignupForm = () => {
                 <div className="text-danger">{formik.errors.email}</div>
               ) : null}
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">
+            <div className="mb-3">
+              <label htmlFor=" exampleFormControlInput1" className="form-label">
                 Subject
               </label>
-              <input name="subject" type="text" class=" form-control w-auto" />
+              <input
+                name="subject"
+                type="text"
+                className=" form-control w-auto"
+              />
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">
+            <div className="mb-3 col-md-6">
+              <label
+                htmlFor=" exampleFormControlTextarea1"
+                className="form-label"
+              >
                 Your Message
               </label>
               <textarea
                 name="message"
-                class="form-control   w-auto  w-md-50 h-50"
+                className="form-control    "
                 rows="6"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary text-light fw-bold">
+            <button
+              type="submit"
+              className="btn btn-primary text-light fw-bold"
+            >
               Submit
             </button>
           </form>
@@ -143,8 +154,8 @@ export default SignupForm;
 // //       <div className="container px-5 py-5 ">
 // //         <div className="container px-5 ">
 // //           <form onSubmit={formik.handleSubmit}>
-// //             <div class="mb-3 ">
-// //               <label for="exampleFormControlInput1" class="form-label">
+// //             <div className="mb-3 ">
+// //               <label htmlFor=" exampleFormControlInput1" className="form-label">
 // //                 Your Name (required)
 // //               </label>
 // //               <input
@@ -152,14 +163,14 @@ export default SignupForm;
 // //                 name="name"
 // //                 onChange={formik.handleChange}
 // //                 value={formik.values.email}
-// //                 class=" form-control w-auto "
+// //                 className=" form-control w-auto "
 // //                 id="exampleFormControlInput1"
 // //                 placeholder="Your Name"
 // //               />
 // //
 // //             </div>
-// //             <div class="mb-3">
-// //               <label for="exampleFormControlInput1" class="form-label">
+// //             <div className="mb-3">
+// //               <label htmlFor=" exampleFormControlInput1" className="form-label">
 // //                 Your Email (required)
 // //               </label>
 // //               <input
@@ -167,35 +178,35 @@ export default SignupForm;
 // //                 type="email"
 // //                 onChange={formik.handleChange}
 // //                 value={formik.values.email}
-// //                 class=" form-control w-auto"
+// //                 className=" form-control w-auto"
 // //                 id="exampleFormControlInput1"
 // //                 placeholder="name@example.com"
 // //               />
 // //             </div>
-// //             <div class="mb-3">
-// //               <label for="exampleFormControlInput1" class="form-label">
+// //             <div className="mb-3">
+// //               <label htmlFor=" exampleFormControlInput1" className="form-label">
 // //                 Subject
 // //               </label>
 // //               <input
 // //                 name="subject"
 // //                 type="email"
-// //                 class=" form-control w-auto"
+// //                 className=" form-control w-auto"
 // //                 id="exampleFormControlInput1"
 // //                 placeholder="name@example.com"
 // //               />
 // //             </div>
-// //             <div class="mb-3">
-// //               <label for="exampleFormControlTextarea1" class="form-label">
+// //             <div className="mb-3">
+// //               <label htmlFor=" exampleFormControlTextarea1" className="form-label">
 // //                 Your Message
 // //               </label>
 // //               <textarea
 // //                 name="message"
-// //                 class="form-control w-50 h-50"
+// //                 className="form-control w-50 h-50"
 // //                 id="exampleFormControlTextarea1"
 // //                 rows="6"
 // //               ></textarea>
 // //             </div>
-// //             <button type="button" class="btn btn-primary text-light fw-bold">
+// //             <button type="button" className="btn btn-primary text-light fw-bold">
 // //               Submit
 // //             </button>
 // //           </form>{" "}

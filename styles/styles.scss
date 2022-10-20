@@ -22,7 +22,6 @@ $theme-colors: (
   "dark": #001738,
 );
 
-
 .carousel-item {
   height: fit-content;
   top: 20%;
@@ -35,16 +34,68 @@ $theme-colors: (
   width: 50vw;
 }
 .api-section {
-
   background-image: url("/assets//API-section-background.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-//   opacity: 0.4;
+  //   opacity: 0.4;
   background-attachment: scroll;
-
 }
 .nav-link:hover {
   background-color: #ff8707;
 }
-@import '~bootstrap/scss/bootstrap.scss';
+.hero {
+  background-image: url("/assets/Art-The-Golden-temple-Punjab-India-city-river-night-lights-man-people-moon-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+@media (min-width: 768px) {
+  .hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+}
+.carousel-caption::before {
+  content: url("/assets/quote.svg");
+  // background-color: #001738
+}
+.partner-img {
+  // padding: 20px;
+  border: 2px solid #1ce1ac;
+}
+.partner-box:hover {
+  .partner-link {
+    display: block;
+  }
+}
+.partner-text {
+  position: relative;
+  top: -10vh;
+  width: 100%;
+}
+.partner-link {
+  display: none;
+  position: relative;
+  background: #ff8707;
+  color: white;
+  top: -40vh;
+  font-weight: 600;
+  padding: 14px;
+  font-size: larger;
+}
+
+@import "~bootstrap/scss/bootstrap.scss";

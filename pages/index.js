@@ -8,7 +8,23 @@ const Home = () => {
         <title>BaniDB Alliance – Gurbani Applications API (BaniDB)</title>
       </Head>
       <div>
-        <div className="container-fluid px-0">
+        <div className="container-fluid px-0 hero ">
+          <div className="bg-dark bg-opacity-25 h-100">
+            <div className="animate__animated animate__backInDown  hero-text text-center d-flex flex-column align-items-center justify-content-center">
+              <p className="bg-primary rounded-3 h1 py-1 px-md-3 text-light">
+                Single, Universally Accessible, Gurbani Database for Websites &
+                Applications.
+              </p>
+              <p className="h5 px-2 text-light fw-bold text-center">
+                The BaniDB API provides a single source of truth for the next
+                generation of Gurbani apps and websites, leaving developers to
+                do what they do best: innovate.
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        {/* <div className="container-fluid px-0">
           <div className="">
             <img
               src="/assets/Art-The-Golden-temple-Punjab-India-city-river-night-lights-man-people-moon-1.jpg"
@@ -33,7 +49,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-indicators">
             <button
@@ -156,7 +172,6 @@ const Home = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div> */}
-
         <div className="container px-4">
           <div className="row text-left py-4">
             <div className="col-12 col-md-6">
@@ -189,38 +204,72 @@ const Home = () => {
               Some of the apps and organizations currently working with the
               BaniDB API
             </p>
-            <div className="col-12 col-md-6 col-lg-3">
-              <div className="card relative">
-                <Image src="/assets/igurbani.png" width={500} height={550} />
-                <button className="btn btn-primary absolute">IGURBANI</button>
+            <div className="col-12 col-md-6 col-lg-3 partner-box py-0">
+              <div>
+                <Image
+                  className="partner-img"
+                  src="/assets/igurbani.png"
+                  width={1000}
+                  height={1200}
+                />
+                <a className="partner-text btn-lg btn btn-primary ">IGURBANI</a>
               </div>
+              <p className="partner-link my-0 py-0">
+                Some of the apps and organizations currently working with the
+                BaniDB API
+              </p>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
-              {" "}
-              <div className="card">
-                <Image src="/assets/SikhiToTheMax.png" width={500} height={550} />
-                <button className="btn btn-primary relative text-uppercase">SikhiToTheMax</button>
+            <div className="col-12 col-md-6 col-lg-3 partner-box py-0">
+              <div>
+                <Image
+                  className="partner-img"
+                  src="/assets/SikhiToTheMax.png"
+                  width={1000}
+                  height={1200}
+                />
+                <a className="partner-text btn-lg btn btn-primary ">SikhiToTheMax</a>
               </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-3">
-              {" "}
-              <div className="card">
-                <Image src="/assets/shudh_gurbani.png" width={500} height={550} />
-                <button className="btn btn-primary relative">Learn Shudh Gurbani</button>
+              <p className="partner-link my-0 py-0">
+                Some of the apps and organizations currently working with the
+                BaniDB API
+              </p>
+            </div>{" "}
+            <div className="col-12 col-md-6 col-lg-3 partner-box py-0">
+              <div>
+                <Image
+                  className="partner-img"
+                  src="/assets/shudh_gurbani.png"
+                  width={1000}
+                  height={1200}
+                />
+                <a className="partner-text btn-lg btn btn-primary ">  Learn Shudh Gurbani</a>
               </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-3">
-              {" "}
-              <div className="card">
-                <Image src="/assets/Gurbani_Khoji.png" width={500} height={550} />
-                <button className="btn btn-primary relative">GURBANI KHOJ</button>
+              <p className="partner-link my-0 py-0">
+                Some of the apps and organizations currently working with the
+                BaniDB API
+              </p>
+            </div>{" "}
+            <div className="col-12 col-md-6 col-lg-3 partner-box py-0">
+              <div>
+                <Image
+                  className="partner-img"
+                  src="/assets/Gurbani_Khoji.png"
+                  width={1000}
+                  height={1200}
+                />
+                <a className="partner-text btn-lg btn btn-primary ">   GURBANI KHOJ</a>
               </div>
+              <p className="partner-link my-0 py-0">
+                Some of the apps and organizations currently working with the
+                BaniDB API
+              </p>
             </div>
+            
           </div>{" "}
         </div>
         {/* API Stats */}
         <div className="container-fluid api-section px-4 py-5 h-25">
-          <div className="container px-4 bg-dark bg-opacity-50" >
+          <div className="container px-4 bg-dark bg-opacity-50">
             <div className="row  px-4 text-light">
               <p className="fs-2 text-center py-3 "> API STATS</p>
               <div className="d-flex flex-column align-items-center col-12 col-md-6 col-lg-3 border border-4 border-info border-top-0">
@@ -243,121 +292,120 @@ const Home = () => {
           </div>
 
           {/* Qoutes */}
-
-        
-        </div>  <div className="container">
-            <div
-              id="myCarousel"
-              className="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div className="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#myCarousel"
-                  data-bs-slide-to="0"
-                  className="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#myCarousel"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#myCarousel"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div className="carousel-inner pt-4 ">
-                <div
-                  className="carousel-item  active"
-                  style={{
-                    height: "30vh",
-                  }}
-                >
-                  <div className="container ">
-                    <div className="carousel-caption   bg-light">
-                      <p className="text-dark fs-4 ">
-                        ਬਾਣੀ ਗੁਰੂ ਗੁਰੂ ਹੈ ਬਾਣੀ ਵਿਚਿ ਬਾਣੀ ਅੰਮ੍ਰਿਤੁ ਸਾਰੇ ॥ The
-                        Word, the Bani is Guru, and Guru is the Bani. Within the
-                        Bani, the Ambrosial Nectar is contained.
-                      </p>
-                      <p className="text-dark fs-5 text-muted">
-                        By Guru Ram Das Ji in Raag Nat Narayan on Panna 982
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="carousel-item "
-                  style={{
-                    height: "30vh",
-                  }}
-                >
-                  <div className="container ">
-                    <div className="carousel-caption  bg-light">
-                      <p className="text-dark fs-4 ">
-                        ਬਾਣੀ ਗੁਰੂ ਗੁਰੂ ਹੈ ਬਾਣੀ ਵਿਚਿ ਬਾਣੀ ਅੰਮ੍ਰਿਤੁ ਸਾਰੇ ॥ The
-                        Word, the Bani is Guru, and Guru is the Bani. Within the
-                        Bani, the Ambrosial Nectar is contained.
-                      </p>{" "}
-                      <p className="text-dark fs-5 text-muted ">
-                        By Guru Ram Das Ji in Raag Nat Narayan on Panna 982
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="carousel-item"
-                  style={{
-                    height: "30vh",
-                  }}
-                >
-                  <div className="container ">
-                    <div className="carousel-caption   bg-light">
-                      <p className="text-dark fs-4 ">
-                        Single, Universally Accessible, Gurbani Database for
-                        Websites & Applications.
-                      </p>
-
-                      <p className="text-dark fs-5 text-muted">
-                        By Guru Ram Das Ji in Raag Nat Narayan on Panna 982
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </div>{" "}
+        <div className="container">
+          <div
+            id="myCarousel"
+            className="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div className="carousel-indicators">
               <button
-                className="carousel-control-prev"
                 type="button"
                 data-bs-target="#myCarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
+                data-bs-slide-to="0"
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
               <button
-                className="carousel-control-next"
                 type="button"
                 data-bs-target="#myCarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Next</span>
-              </button>
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
-          </div> 
+            <div className="carousel-inner pt-4  my-4">
+              <div
+                className="carousel-item  active"
+                style={{
+                  height: "40vh",
+                }}
+              >
+                <div className="container ">
+                  <div className="carousel-caption   bg-light">
+                    <p className="text-dark fs-4 ">
+                      ਬਾਣੀ ਗੁਰੂ ਗੁਰੂ ਹੈ ਬਾਣੀ ਵਿਚਿ ਬਾਣੀ ਅੰਮ੍ਰਿਤੁ ਸਾਰੇ ॥ The Word,
+                      the Bani is Guru, and Guru is the Bani. Within the Bani,
+                      the Ambrosial Nectar is contained.
+                    </p>
+                    <p className="text-dark fs-5 text-muted">
+                      By Guru Ram Das Ji in Raag Nat Narayan on Panna 982
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="carousel-item "
+                style={{
+                  height: "40vh",
+                }}
+              >
+                <div className="container ">
+                  <div className="carousel-caption  bg-light">
+                    <p className="text-dark fs-4 ">
+                      ਬਾਣੀ ਗੁਰੂ ਗੁਰੂ ਹੈ ਬਾਣੀ ਵਿਚਿ ਬਾਣੀ ਅੰਮ੍ਰਿਤੁ ਸਾਰੇ ॥ The Word,
+                      the Bani is Guru, and Guru is the Bani. Within the Bani,
+                      the Ambrosial Nectar is contained.
+                    </p>{" "}
+                    <p className="text-dark fs-5 text-muted ">
+                      By Guru Ram Das Ji in Raag Nat Narayan on Panna 982
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="carousel-item"
+                style={{
+                  height: "40vh",
+                }}
+              >
+                <div className="container ">
+                  <div className="carousel-caption   bg-light">
+                    <p className="text-dark fs-4 ">
+                      Single, Universally Accessible, Gurbani Database for
+                      Websites & Applications.
+                    </p>
+
+                    <p className="text-dark fs-5 text-muted">
+                      By Guru Ram Das Ji in Raag Nat Narayan on Panna 982
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
