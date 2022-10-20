@@ -1,8 +1,7 @@
-@import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
 body {
-    font-family: "Muli", sans-serif;
-    font-weight: 300;
+  font-family: "Mulish", sans-serif;
+  font-weight: 350;
 }
 
 $primary: #ff8707;
@@ -11,17 +10,41 @@ $success: #2ecc40;
 $warning: #ff851b;
 $light: #f4f4f4;
 $dark: #111;
-$secondary:#111 ;
+$secondary: #111;
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  "primary": #ff8707,
+  "secondary": #833bec,
+  "success": #1ce1ac,
+  "info": #ff7d50,
+  "warning": #ffbe0b,
+  "danger": #ff007f,
+  "light": #ffffff,
+  "dark": #001738,
 );
-.carousel-caption{
-    top: 20px !important;
+
+
+.carousel-item {
+  height: fit-content;
+  top: 20%;
 }
+.header-text {
+  width: 60vw;
+}
+.header-content {
+  text-shadow: #001738 0px 0px 10px 0px;
+  width: 50vw;
+}
+.api-section {
+
+  background-image: url("/assets//API-section-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+//   opacity: 0.4;
+  background-attachment: scroll;
+
+}
+.nav-link:hover {
+  background-color: #ff8707;
+}
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
