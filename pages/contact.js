@@ -78,7 +78,7 @@ const SignupForm = () => {
               </label>
               <textarea
                 name="message"
-                class="form-control w-50 h-50"
+                class="form-control   w-auto  w-md-50 h-50"
                 rows="6"
               ></textarea>
             </div>
