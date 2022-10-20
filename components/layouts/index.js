@@ -11,7 +11,7 @@ function PageTemplate({ children }) {
       <div className="ccontainer-fluid">
         <Navigation />
         {children}
-        <Footer />
+        <Footer  />
       </div>
     </>
   );

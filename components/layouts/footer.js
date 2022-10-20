@@ -1,79 +1,79 @@
+import Link from "next/link";
 import React from "react";
 
 function footer() {
   return (
-    <div className="container px-4 pt-3">
-      <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div className="col-md-4 d-flex align-items-center">
-          {/* <span className="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span> */}
-          <ul className="nav flex-column">
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Terms of Service
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Privacy Policy
-              </a>
-            </li>{" "}
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Non-Profit Open Software License 3.0 (NPOSL-3.0)
-              </a>
-            </li>{" "}
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Contact
-              </a>
-            </li>{" "}
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                About
-              </a>
-            </li>
+    <div className="bg-dark ">
+      <div className="container px-4 pt-3 ">
+        <footer
+          className="d-flex flex-wrap justify-content-between
+       align-items-center py-3 "
+        >
+          <div className="col-md-4 d-flex align-items-center">
+            {/* <span className="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span> */}
+            <ul className="nav flex-column">
+              <li className="nav-item mb-2">
+                <Link href="/term-and-condition">
+                  <a
+                    className="p-0 text-muted "
+                    style={{ textDecoration: "none" }}
+                  >
+                    Terms of Service
+                  </a>
+                </Link>
+              </li>
+              <li className="nav-item mb-2">
+                <Link href="/privacy-policy">
+                  <a
+                    className="p-0 text-muted "
+                    style={{ textDecoration: "none" }}
+                  >
+                    Privacy Policy
+                  </a>
+                </Link>
+              </li>{" "}
+              <li className="nav-item mb-2">
+                <Link href="/nposl">
+                  <a
+                    className="p-0 text-muted "
+                    style={{ textDecoration: "none" }}
+                  >
+                    Non-Profit Open Software License 3.0 (NPOSL-3.0)
+                  </a>
+                </Link>
+              </li>{" "}
+              <li className="nav-item mb-2">
+                <Link href="/contact">
+                  <a
+                    className="p-0 text-muted "
+                    style={{ textDecoration: "none" }}
+                  >
+                    Contact
+                  </a>
+                </Link>
+              </li>{" "}
+              <li className="nav-item mb-2">
+                <Link href="/about">
+                  <a
+                    className="p-0 text-muted "
+                    style={{ textDecoration: "none" }}
+                  >
+                    About
+                  </a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <ul className="nav col-md-4 justify-content-end  text-muted">
+            <p>
+              © 2019 Khalis Foundation, a registered California non-profit
+              organization
+            </p>
           </ul>
-        </div>
-
-        <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <p>
-            © 2019 Khalis Foundation, a registered California non-profit
-            organization
-          </p>
-        </ul>
-      </footer>
+        </footer>
+      </div>{" "}
     </div>
-    // <div className="container">
-    //   <footer className="p-5">
-    //     <div className="row">
-    //       <div className="col-6 ">
-    //         <h5>Section</h5>
-    //         <ul className="nav flex-column">
-    //           <li className="nav-item mb-2">
-    //             <a href="#" className="nav-link p-0 text-muted">
-    //               Home
-    //             </a>
-    //           </li>
-    //
-    //           <li className="nav-item mb-2">
-    //             <a href="#" className="nav-link p-0 text-muted">
-    //               About
-    //             </a>
-    //           </li>
-    //         </ul>
-    //       </div>
-
-    //       <div className="col-6 ">
-    //         <div className="">
-    //           <p>
-    //             © 2019 Khalis Foundation, a registered California non-profit
-    //             organization
-    //           </p>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </footer>
-    // </div>
   );
 }
 
