@@ -11,7 +11,8 @@ function navigation() {
             <Image
               src="/assets/full-banidb-logo.png"
               width="200"
-              height="50"
+              height="50" 
+              alt='Icon BANIDB'
             />
           </a>
         </Link>

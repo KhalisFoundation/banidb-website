@@ -3,19 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start"
-
   },
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.2",
     "formik": "^2.2.9",
-    "next": "12.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^18.2.0",
     "sass": "^1.55.0",
     "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "8.25.0",
+    "eslint-config-next": "12.3.1"
   }
 }

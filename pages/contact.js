@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import Head from "next/head";
 
-const contact = () => {
+const SignupForm = () => {
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -18,18 +18,19 @@ const contact = () => {
         .email("Invalid email address")
         .required("Email Required"),
     }),
+
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     },
   });
   return (
-    <>
+    <div>
+      {" "}
       <Head>
-        <title>Contact -- BANIDB.com </title>{" "}
-      </Head>{" "}
+        <title> Contact -- BANIDB.com</title>
+      </Head>
       <div className="container px-5 py-5 ">
         <div className="container px-5 ">
-        <h1 className="fs-3 py-3">CONTACT US</h1>
           <form onSubmit={formik.handleSubmit}>
             <div class="mb-3 ">
               <label for="name" class="form-label">
@@ -87,85 +88,121 @@ const contact = () => {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 };
+export default SignupForm;
 
-// import Head from "next/head";
 // import React from "react";
 // import { useFormik } from "formik";
+// import * as Yup from "yup";
+// import Head from "next/head";
 
-// function contact() {
+// const contact = () => {
+//   const formik = useFormik({
+//     initialValues: {
+//       name: "",
+//       email: "",
+//       subject: "",
+//       message: "",
+//     },
+//     validationSchema: Yup.object({
+//       name: Yup.string().required("Field is Required"),
 
+//       email: Yup.string()
+//         .email("Invalid email address")
+//         .required("Email Required"),
+//     }),
+
+//     onSubmit: (values) => {
+//       alert(JSON.stringify(values, null, 2));
+//     },
+//   });
 //   return (
 //     <>
-//       {" "}
 //       <Head>
-//         <title>Contact -- BANIDB.com </title>
-//       </Head>
-//       <div className="container px-5 py-5 ">
-//         <div className="container px-5 ">
-//           <form onSubmit={formik.handleSubmit}>
-//             <div class="mb-3 ">
-//               <label for="exampleFormControlInput1" class="form-label">
-//                 Your Name (required)
-//               </label>
-//               <input
-//                 type="text"
-//                 name="name"
-//                 onChange={formik.handleChange}
-//                 value={formik.values.email}
-//                 class=" form-control w-auto "
-//                 id="exampleFormControlInput1"
-//                 placeholder="Your Name"
-//               />
-//
-//             </div>
-//             <div class="mb-3">
-//               <label for="exampleFormControlInput1" class="form-label">
-//                 Your Email (required)
-//               </label>
-//               <input
-//                 name="email"
-//                 type="email"
-//                 onChange={formik.handleChange}
-//                 value={formik.values.email}
-//                 class=" form-control w-auto"
-//                 id="exampleFormControlInput1"
-//                 placeholder="name@example.com"
-//               />
-//             </div>
-//             <div class="mb-3">
-//               <label for="exampleFormControlInput1" class="form-label">
-//                 Subject
-//               </label>
-//               <input
-//                 name="subject"
-//                 type="email"
-//                 class=" form-control w-auto"
-//                 id="exampleFormControlInput1"
-//                 placeholder="name@example.com"
-//               />
-//             </div>
-//             <div class="mb-3">
-//               <label for="exampleFormControlTextarea1" class="form-label">
-//                 Your Message
-//               </label>
-//               <textarea
-//                 name="message"
-//                 class="form-control w-50 h-50"
-//                 id="exampleFormControlTextarea1"
-//                 rows="6"
-//               ></textarea>
-//             </div>
-//             <button type="button" class="btn btn-primary text-light fw-bold">
-//               Submit
-//             </button>
-//           </form>{" "}
-//         </div>
-//       </div>
+//         <title>Contact -- BANIDB.com </title>{" "}
+//       </Head>{" "}
+
 //     </>
 //   );
-// }
+// };
 
-export default contact;
+// // import Head from "next/head";
+// // import React from "react";
+// // import { useFormik } from "formik";
+
+// // function contact() {
+
+// //   return (
+// //     <>
+// //       {" "}
+// //       <Head>
+// //         <title>Contact -- BANIDB.com </title>
+// //       </Head>
+// //       <div className="container px-5 py-5 ">
+// //         <div className="container px-5 ">
+// //           <form onSubmit={formik.handleSubmit}>
+// //             <div class="mb-3 ">
+// //               <label for="exampleFormControlInput1" class="form-label">
+// //                 Your Name (required)
+// //               </label>
+// //               <input
+// //                 type="text"
+// //                 name="name"
+// //                 onChange={formik.handleChange}
+// //                 value={formik.values.email}
+// //                 class=" form-control w-auto "
+// //                 id="exampleFormControlInput1"
+// //                 placeholder="Your Name"
+// //               />
+// //
+// //             </div>
+// //             <div class="mb-3">
+// //               <label for="exampleFormControlInput1" class="form-label">
+// //                 Your Email (required)
+// //               </label>
+// //               <input
+// //                 name="email"
+// //                 type="email"
+// //                 onChange={formik.handleChange}
+// //                 value={formik.values.email}
+// //                 class=" form-control w-auto"
+// //                 id="exampleFormControlInput1"
+// //                 placeholder="name@example.com"
+// //               />
+// //             </div>
+// //             <div class="mb-3">
+// //               <label for="exampleFormControlInput1" class="form-label">
+// //                 Subject
+// //               </label>
+// //               <input
+// //                 name="subject"
+// //                 type="email"
+// //                 class=" form-control w-auto"
+// //                 id="exampleFormControlInput1"
+// //                 placeholder="name@example.com"
+// //               />
+// //             </div>
+// //             <div class="mb-3">
+// //               <label for="exampleFormControlTextarea1" class="form-label">
+// //                 Your Message
+// //               </label>
+// //               <textarea
+// //                 name="message"
+// //                 class="form-control w-50 h-50"
+// //                 id="exampleFormControlTextarea1"
+// //                 rows="6"
+// //               ></textarea>
+// //             </div>
+// //             <button type="button" class="btn btn-primary text-light fw-bold">
+// //               Submit
+// //             </button>
+// //           </form>{" "}
+// //         </div>
+// //       </div>
+// //     </>
+// //   );
+// // }
+
+// export default contact;
