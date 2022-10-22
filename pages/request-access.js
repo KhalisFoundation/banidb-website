@@ -33,7 +33,7 @@ const SignupForm = () => {
       </Head>
       <div className="container px-5 py-5 ">
         <div className="container px-5 ">
-          <h1 className="fs-3 py-3">BECOME A PARTNER</h1>{" "}
+          <h1 className="fs-3 py-3 text-center">BECOME A PARTNER</h1>{" "}
           <form onSubmit={formik.handleSubmit}>
             <div className="mb-3 ">
               <label htmlFor=" name" className="form-label">

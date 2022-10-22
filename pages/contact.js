@@ -25,13 +25,12 @@ const SignupForm = () => {
   });
   return (
     <div>
-      {" "}
       <Head>
         <title> Contact -- BANIDB.com</title>
       </Head>
       <div className="container px-5 py-5 ">
         <div className="container px-5 ">
-          <h1 className="fs-3 py-3">CONTACT</h1>{" "}
+          <h1 className="fs-3 py-3 text-center">CONTACT</h1>
           <form onSubmit={formik.handleSubmit}>
             <div className="mb-3 ">
               <label htmlFor=" name" className="form-label">
@@ -49,7 +48,7 @@ const SignupForm = () => {
               {formik.touched.name && formik.errors.name ? (
                 <div className="text-danger">{formik.errors.name}</div>
               ) : null}
-            </div>{" "}
+            </div>
             <div className="mb-3 ">
               <label htmlFor=" email" className="form-label">
                 Your Email <span className="text-danger">*</span>
@@ -132,8 +131,8 @@ export default SignupForm;
 //   return (
 //     <>
 //       <Head>
-//         <title>Contact -- BANIDB.com </title>{" "}
-//       </Head>{" "}
+//         <title>Contact -- BANIDB.com </title>
+//       </Head>
 
 //     </>
 //   );
@@ -147,7 +146,7 @@ export default SignupForm;
 
 // //   return (
 // //     <>
-// //       {" "}
+// //
 // //       <Head>
 // //         <title>Contact -- BANIDB.com </title>
 // //       </Head>
@@ -209,7 +208,7 @@ export default SignupForm;
 // //             <button type="button" className="btn btn-primary text-light fw-bold">
 // //               Submit
 // //             </button>
-// //           </form>{" "}
+// //           </form>
 // //         </div>
 // //       </div>
 // //     </>
