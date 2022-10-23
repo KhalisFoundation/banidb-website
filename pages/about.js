@@ -11,8 +11,9 @@ export default function about({ data }) {
       <Head>
         <title>Contact Us -- BANIDB</title>
       </Head>
-      <div className="container">
+      <div className="container px-4 py-4">
         <div
+          
           dangerouslySetInnerHTML={{
             __html: marked(data.replace(/["]+/g, "")),
           }}
@@ -23,7 +24,7 @@ export default function about({ data }) {
 }
 export async function getStaticProps() {
   let res = await axios.get(
-    "https://raw.githubusercontent.com/KhalisFoundation/banidb-api/dev/README.md"
+    "https://raw.githubusercontent.com/abdulwaqar844/TS/main/README.md"
   );
   let { content } = matter(res.data);
 
