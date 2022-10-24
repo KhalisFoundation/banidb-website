@@ -11,9 +11,9 @@ export default function about({ data }) {
       <Head>
         <title>Contact Us -- BANIDB</title>
       </Head>
-      <div className="container px-4 py-4">
+      <div className="container px-4 py-5">
         <div
-          
+          className=" py-5"
           dangerouslySetInnerHTML={{
             __html: marked(data.replace(/["]+/g, "")),
           }}
@@ -23,7 +23,6 @@ export default function about({ data }) {
   );
 }
 export async function getStaticProps() {
-  
   let res = await axios.get(
     "https://raw.githubusercontent.com/abdulwaqar844/TS/main/README.md"
   );

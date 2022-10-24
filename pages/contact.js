@@ -28,74 +28,81 @@ const SignupForm = () => {
       <Head>
         <title> Contact -- BANIDB.com</title>
       </Head>
-      <div className="container px-5 py-5 ">
-        <div className="container px-5 ">
+      <div className="container px-4 py-5 ">
+        <div className="container row pt-4">
           <h1 className="fs-3 py-3 text-center">CONTACT</h1>
-          <form onSubmit={formik.handleSubmit}>
-            <div className="mb-3 ">
-              <label htmlFor=" name" className="form-label">
-                Your Name <span className="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                name="name"
-                onChange={formik.handleChange}
-                value={formik.values.name}
-                className=" form-control w-auto "
-                placeholder="Your Name"
-                {...formik.getFieldProps("name")}
-              />
-              {formik.touched.name && formik.errors.name ? (
-                <div className="text-danger">{formik.errors.name}</div>
-              ) : null}
-            </div>
-            <div className="mb-3 ">
-              <label htmlFor=" email" className="form-label">
-                Your Email <span className="text-danger">*</span>
-              </label>
-              <input
-                type="email"
-                name="email"
-                onChange={formik.handleChange}
-                value={formik.values.email}
-                className=" form-control w-auto "
-                placeholder="Email"
-                {...formik.getFieldProps("email")}
-              />
-              {formik.touched.email && formik.errors.email ? (
-                <div className="text-danger">{formik.errors.email}</div>
-              ) : null}
-            </div>
-            <div className="mb-3">
-              <label htmlFor=" exampleFormControlInput1" className="form-label">
-                Subject
-              </label>
-              <input
-                name="subject"
-                type="text"
-                className=" form-control w-auto"
-              />
-            </div>
-            <div className="mb-3 col-md-6">
-              <label
-                htmlFor=" exampleFormControlTextarea1"
-                className="form-label"
+          <div className="col-12 col-lg-8 ">
+            <form onSubmit={formik.handleSubmit}>
+              <div className="mb-3 col-12 col-lg-6 ">
+                <label htmlFor=" name" className="form-label">
+                  Your Name <span className="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  onChange={formik.handleChange}
+                  value={formik.values.name}
+                  className=" form-control  px-2 py-2  w-100"
+                  placeholder="Your Name"
+                  {...formik.getFieldProps("name")}
+                />
+                {formik.touched.name && formik.errors.name ? (
+                  <div className="text-danger">{formik.errors.name}</div>
+                ) : null}
+              </div>
+              <div className="mb-3 col-12 col-lg-6 ">
+                <label htmlFor=" email" className="form-label">
+                  Your Email <span className="text-danger">*</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  onChange={formik.handleChange}
+                  value={formik.values.email}
+                  className=" form-control  px-2 py-2"
+                  placeholder="Email"
+                  {...formik.getFieldProps("email")}
+                />
+                {formik.touched.email && formik.errors.email ? (
+                  <div className="text-danger">{formik.errors.email}</div>
+                ) : null}
+              </div>
+              <div className="mb-3 col-12 col-lg-6 ">
+                <label
+                  htmlFor=" exampleFormControlInput1"
+                  className="form-label"
+                >
+                  Subject
+                </label>
+                <input
+                  name="subject"
+                  type="text"
+                  placeholder="Subject"
+                  className=" form-control   px-2 py-2"
+                />
+              </div>
+              <div className="mb-3 col-12 col-lg-10">
+                <label
+                  htmlFor=" exampleFormControlTextarea1"
+                  className="form-label"
+                >
+                  Your Message
+                </label>
+                <textarea
+                  name="message"
+                  className="form-control    "
+                  rows="6"
+                  placeholder="Write your message"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-primary text-light fw-bold"
               >
-                Your Message
-              </label>
-              <textarea
-                name="message"
-                className="form-control    "
-                rows="6"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="btn btn-primary text-light fw-bold"
-            >
-              Submit
-            </button>
-          </form>
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

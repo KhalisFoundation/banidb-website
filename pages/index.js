@@ -11,11 +11,11 @@ const Home = () => {
         <div className="container-fluid px-0 hero ">
           <div className="bg-dark bg-opacity-25 h-100">
             <div className="animate__animated animate__backInDown  hero-text text-center d-flex flex-column align-items-center justify-content-center">
-              <p className="bg-primary rounded-3 h1 py-1 px-md-3 text-light">
+              <p className="bg-primary rounded-3 h1 px-2 py-3 px-md-3 text-light">
                 Single, Universally Accessible, Gurbani Database for Websites &
                 Applications.
               </p>
-              <p className="h5 px-2 text-light fw-bold text-center">
+              <p className="h5 px-3 py-3 text-dark fw-bold text-center">
                 The BaniDB API provides a single source of truth for the next
                 generation of Gurbani apps and websites, leaving developers to
                 do what they do best: innovate.
@@ -197,8 +197,8 @@ const Home = () => {
           </div>
         </div>
         {/* PARTNER */}
-        <div className="container px-4">
-          <div className="row py-3">
+        <div className="container px-4 h-25">
+          <div className="row py-3 ">
             <h1 className="fw-bold text-center ">MEMBERS</h1>
             <p className="h4 text-center py-3">
               Some of the apps and organizations currently working with the
@@ -227,7 +227,9 @@ const Home = () => {
                   width={1000}
                   height={1200}
                 />
-                <a className="partner-text btn-lg btn btn-primary ">SikhiToTheMax</a>
+                <a className="partner-text btn-lg btn btn-primary ">
+                  SikhiToTheMax
+                </a>
               </div>
               <p className="partner-link my-0 py-0">
                 Some of the apps and organizations currently working with the
@@ -242,7 +244,10 @@ const Home = () => {
                   width={1000}
                   height={1200}
                 />
-                <a className="partner-text btn-lg btn btn-primary ">  Learn Shudh Gurbani</a>
+                <a className="partner-text btn-lg btn btn-primary ">
+                  {" "}
+                  Learn Shudh Gurbani
+                </a>
               </div>
               <p className="partner-link my-0 py-0">
                 Some of the apps and organizations currently working with the
@@ -257,18 +262,20 @@ const Home = () => {
                   width={1000}
                   height={1200}
                 />
-                <a className="partner-text btn-lg btn btn-primary ">   GURBANI KHOJ</a>
+                <a className="partner-text btn-lg btn btn-primary ">
+                  {" "}
+                  GURBANI KHOJ
+                </a>
               </div>
               <p className="partner-link my-0 py-0">
                 Some of the apps and organizations currently working with the
                 BaniDB API
               </p>
             </div>
-            
           </div>{" "}
         </div>
         {/* API Stats */}
-        <div className="container-fluid api-section px-4 py-5 h-25">
+        <div className="container-fluid api-section px-4 py-0 ">
           <div className="container px-4 bg-dark bg-opacity-50">
             <div className="row  px-4 text-light">
               <p className="fs-2 text-center py-3 "> API STATS</p>
@@ -321,13 +328,8 @@ const Home = () => {
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div className="carousel-inner pt-4  my-4">
-              <div
-                className="carousel-item  active"
-                style={{
-                  height: "40vh",
-                }}
-              >
+            <div className="carousel-inner py-4  ">
+              <div className="carousel-item  active">
                 <div className="container ">
                   <div className="carousel-caption   bg-light">
                     <p className="text-dark fs-4 ">
@@ -341,12 +343,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div
-                className="carousel-item "
-                style={{
-                  height: "40vh",
-                }}
-              >
+              <div className="carousel-item ">
                 <div className="container ">
                   <div className="carousel-caption  bg-light">
                     <p className="text-dark fs-4 ">
@@ -360,12 +357,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div
-                className="carousel-item"
-                style={{
-                  height: "40vh",
-                }}
-              >
+              <div className="carousel-item">
                 <div className="container ">
                   <div className="carousel-caption   bg-light">
                     <p className="text-dark fs-4 ">
