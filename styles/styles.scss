@@ -60,16 +60,22 @@ $theme-colors: (
   padding-right: 2vw;
 }
 @media (max-width: 768px) {
-  .nav-link {
+  #navbarScroll {
     background-color: $primary !important;
   }
   .nav-link {
     color: $light !important;
   }
 }
-#navbarScrollingDropdown {
-  color: $dark !important;
+@media (min-width: 769px) {
+  #navbarScrollingDropdown {
+    color: $dark !important;
+  }
+  .nav-link {
+    color: $dark !important;
+  }
 }
+
 .dropdown-menu {
   background-color: $light !important;
 }

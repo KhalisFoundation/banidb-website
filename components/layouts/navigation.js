@@ -10,7 +10,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 function NavScrollExample() {
   return (
     <Navbar fixed="top" bg="light" expand="lg" collapseOnSelect>
-      <Container fluid className="px-4 nav-div">
+      <Container fluid className="px-0 nav-div">
         <Navbar.Brand>
           <Link href="/">
             <a className="navbar-brand">
@@ -27,41 +27,41 @@ function NavScrollExample() {
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ms-auto my-2 my-lg-0 px-0 text-center">
             <Link href="/" passHref>
-              <Nav.Link className=" px-3 fw-semibold text-dark  ">
+              <Nav.Link className=" px-3 fw-semibold   ">
                 HOME
               </Nav.Link>
             </Link>
 
-            <Nav.Link className="pt-0 fw-semibold text-dark  ">
+            <Nav.Link className="pt-0 fw-semibold   ">
               <Link href="/partners" passHref>
                 <NavDropdown
                   title="PARTNERS"
                   id="navbarScrollingDropdown"
-                  className=" fw-semibold text-dark  "
+                  className=" fw-semibold   "
                 >
                   <Link href="/partners/igurbani" passHref>
-                    <NavDropdown.Item className="py-2 px-3 fw-semibold text-dark  ">
+                    <NavDropdown.Item className="py-2 px-3 fw-semibold   ">
                       iGurbani
                     </NavDropdown.Item>
                   </Link>
 
                   <Link href="/partners/sikhitothemax" passHref>
-                    <NavDropdown.Item className="py-2 px-3 fw-semibold text-dark  ">
+                    <NavDropdown.Item className="py-2 px-3 fw-semibold   ">
                       SikhiToTheMax
                     </NavDropdown.Item>
                   </Link>
                   <Link href="/partners/gurbani-unlimited" passHref>
-                    <NavDropdown.Item className="py-2 px-3 fw-semibold text-dark  ">
+                    <NavDropdown.Item className="py-2 px-3 fw-semibold   ">
                       Learn Shudh Gurbani
                     </NavDropdown.Item>
                   </Link>
                   <Link href="/partners/share-charity" passHref>
-                    <NavDropdown.Item className="py-2 px-3 fw-semibold text-dark  ">
+                    <NavDropdown.Item className="py-2 px-3 fw-semibold   ">
                       SHARE Charity
                     </NavDropdown.Item>
                   </Link>
                   <Link href="/partners/khalis-foundation" passHref>
-                    <NavDropdown.Item className="py-2 px-3 fw-semibold text-dark  ">
+                    <NavDropdown.Item className="py-2 px-3 fw-semibold   ">
                       Khalis Foundation
                     </NavDropdown.Item>
                   </Link>
@@ -70,17 +70,17 @@ function NavScrollExample() {
             </Nav.Link>
 
             <Link href="/about" passHref>
-              <Nav.Link className="px-3  fw-semibold text-dark  ">
+              <Nav.Link className="px-3  fw-semibold   ">
                 ABOUT
               </Nav.Link>
             </Link>
             <Link href="/contact" passHref>
-              <Nav.Link className="px-3  fw-semibold text-dark  ">
+              <Nav.Link className="px-3  fw-semibold   ">
                 CONTACT
               </Nav.Link>
             </Link>
             <Link href="/request-access" passHref>
-              <Nav.Link className="px-3  fw-semibold text-dark  ">
+              <Nav.Link className="px-3  fw-semibold   ">
                 BECOME A PARTNER
               </Nav.Link>
             </Link>

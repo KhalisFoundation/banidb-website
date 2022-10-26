@@ -336,7 +336,7 @@ const Home = () => {
           </div>
         </div>
         {/* API Stats */}
-        <div className="container-fluid api-section px-4 py-2 ">
+        <div className="container-fluid api-section px-4 py-5 ">
           <div className="container px-4 bg-dark bg-opacity-50">
             <div className="row  px-4 text-light">
               <p className="fs-2 text-center py-3 "> API STATS</p>
