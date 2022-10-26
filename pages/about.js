@@ -4,7 +4,7 @@ import { marked } from "marked";
 import axios from "axios";
 import Head from "next/head";
 export default function about({ data }) {
-  console.log(data);
+
 
   return (
     <>

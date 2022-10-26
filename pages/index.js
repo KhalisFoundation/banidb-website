@@ -204,93 +204,154 @@ const Home = () => {
               Some of the apps and organizations currently working with the
               BaniDB API
             </p>
-            <div className="col-12 col-md-6 col-lg-3 partner-box py-0">
-              <div>
-                <Image
-                  className="partner-img"
+            <div className="col-12 col-md-6 col-lg-3  py-1">
+              <div class="container1">
+                <img
                   src="/assets/igurbani.png"
-                  width={1000}
-                  height={1200}
+                  alt="Avatar"
+                  class="image"
+                  style={{ width: "100%" }}
                 />
-                <a className="partner-text btn-lg btn btn-primary ">IGURBANI</a>
+                <div class="middle">
+                  <div class="middlemiddle">
+                    <a
+                      href="/partners/"
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      <div className="text-center ">
+                        <p className="h4  border-bottom border-3 border-light w-auto">
+                          iGurbani
+                        </p>
+
+                        <p>
+                         A humble effort by the Akal Design
+                          team to bring the hard work of Baba Darshan Singh
+                          (Mallehwal) int...Detail
+                        </p>
+                        <button className=" btn btn-sm btn-dark">
+                          Details
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <p className="partner-link my-0 py-0">
-                Some of the apps and organizations currently working with the
-                BaniDB API
-              </p>
             </div>
-            <div className="col-12 col-md-6 col-lg-3 partner-box py-0">
-              <div>
-                <Image
-                  className="partner-img"
+            <div className="col-12 col-md-6 col-lg-3  py-1">
+              <div class="container1">
+                <img
                   src="/assets/SikhiToTheMax.png"
-                  width={1000}
-                  height={1200}
+                  alt="Avatar"
+                  class="image"
+                  style={{ width: "100%" }}
                 />
-                <a className="partner-text btn-lg btn btn-primary ">
-                  SikhiToTheMax
-                </a>
+                <div class="middle">
+                  <div class="middlemiddle">
+                    <a
+                      href="/partners/"
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      <div className="text-center ">
+                        <p className="h4  border-bottom border-3 border-light w-">
+                          SIKHITOTHEMAX
+                        </p>
+
+                        <p>
+                          Originally developed by Bhai Tarsem Singh of SHARE
+                          charity UK, SikhiToTheMax has become a defacto st...
+                        </p>
+                        <button className=" btn btn-sm btn-dark">
+                          Details
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <p className="partner-link my-0 py-0">
-                Some of the apps and organizations currently working with the
-                BaniDB API
-              </p>
-            </div>{" "}
-            <div className="col-12 col-md-6 col-lg-3 partner-box py-0">
-              <div>
-                <Image
-                  className="partner-img"
-                  src="/assets/shudh_gurbani.png"
-                  width={1000}
-                  height={1200}
-                />
-                <a className="partner-text btn-lg btn btn-primary ">
-                  {" "}
-                  Learn Shudh Gurbani
-                </a>
-              </div>
-              <p className="partner-link my-0 py-0">
-                Some of the apps and organizations currently working with the
-                BaniDB API
-              </p>
-            </div>{" "}
-            <div className="col-12 col-md-6 col-lg-3 partner-box py-0">
-              <div>
-                <Image
-                  className="partner-img"
-                  src="/assets/Gurbani_Khoji.png"
-                  width={1000}
-                  height={1200}
-                />
-                <a className="partner-text btn-lg btn btn-primary ">
-                  {" "}
-                  GURBANI KHOJ
-                </a>
-              </div>
-              <p className="partner-link my-0 py-0">
-                Some of the apps and organizations currently working with the
-                BaniDB API
-              </p>
             </div>
-          </div>{" "}
+            <div className="col-12 col-md-6 col-lg-3  py-1">
+              <div class="container1">
+                <img
+                  src="/assets/shudh_gurbani.png"
+                  alt="Avatar"
+                  class="image"
+                  style={{ width: "100%" }}
+                />
+                <div class="middle">
+                  <div class="middlemiddle">
+                    <a
+                      href="/partners/"
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      <div className="text-center ">
+                        <p className="h4  border-bottom border-3 border-light w-">
+                          LEARN SHUDH GURBANI
+                        </p>
+
+                        <p>
+                          Previously known as "Gurbani Unlimited". This app
+                          showcases Bhai Jaswant Singh Ji's (a.k.a Bhagat Ji...
+                        </p>
+                        <button className=" btn btn-sm btn-dark">
+                          Details
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-3  py-1">
+              <div class="container1">
+                <img
+                  src="/assets/Gurbani_Khoji.png"
+                  alt="Avatar"
+                  class="image"
+                  style={{ width: "100%" }}
+                />
+                <div class="middle">
+                  <div class="middlemiddle">
+                    <a
+                      href="/partners/"
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
+                      <div className="text-center ">
+                        <p className="h4  border-bottom border-3 border-light w-">
+                          GURBANI KHOJ
+                        </p>
+
+                        <p>
+                          Gurbani Khoj is an application that will provide you
+                          with translations and transliterations of the...
+                        </p>
+                        <button className=" btn btn-sm btn-dark">
+                          Details
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         {/* API Stats */}
-        <div className="container-fluid api-section px-4 py-0 ">
+        <div className="container-fluid api-section px-4 py-2 ">
           <div className="container px-4 bg-dark bg-opacity-50">
             <div className="row  px-4 text-light">
               <p className="fs-2 text-center py-3 "> API STATS</p>
               <div className="d-flex flex-column align-items-center col-12 col-md-6 col-lg-3 border border-4 border-info border-top-0">
                 <p className="fs-1 fw-bold"> 141,730</p>
                 <p className="fs-4 fw-bold"> LINES OF GURBANI</p>
-              </div>{" "}
+              </div>
               <div className="d-flex flex-column align-items-center col-12 col-md-6 col-lg-3 border border-4 border-info border-top-0">
                 <p className="fs-1 fw-bold"> 13,365 </p>
                 <p className="fs-4 fw-bold"> SHABADS</p>
-              </div>{" "}
+              </div>
               <div className="d-flex flex-column align-items-center col-12 col-md-6 col-lg-3 border border-4 border-info border-top-0">
                 <p className="fs-1 fw-bold"> 982,085</p>
                 <p className="fs-4 fw-bold"> INDIVIDUAL WORDS</p>
-              </div>{" "}
+              </div>
               <div className="d-flex flex-column align-items-center col-12 col-md-6 col-lg-3 border border-4 border-info border-top-0">
                 <p className="fs-1 fw-bold"> 1</p>
                 <p className="fs-4 fw-bold"> GURU</p>
@@ -299,8 +360,8 @@ const Home = () => {
           </div>
 
           {/* Qoutes */}
-        </div>{" "}
-        <div className="container">
+        </div>
+        <div className="container py-2">
           <div
             id="myCarousel"
             className="carousel slide"
@@ -350,7 +411,7 @@ const Home = () => {
                       ਬਾਣੀ ਗੁਰੂ ਗੁਰੂ ਹੈ ਬਾਣੀ ਵਿਚਿ ਬਾਣੀ ਅੰਮ੍ਰਿਤੁ ਸਾਰੇ ॥ The Word,
                       the Bani is Guru, and Guru is the Bani. Within the Bani,
                       the Ambrosial Nectar is contained.
-                    </p>{" "}
+                    </p>
                     <p className="text-dark fs-5 text-muted ">
                       By Guru Ram Das Ji in Raag Nat Narayan on Panna 982
                     </p>
