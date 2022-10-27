@@ -33,7 +33,7 @@ const SignupForm = () => {
       </Head>
       <div className="container px-4 py-5 ">
         <div className="container row pt-5">
-          <h1 className="fs-3 py-3 text-center">BECOME A PARTNER</h1>{" "}
+          <h1 className="fs-3 py-3 text-center">BECOME A PARTNER</h1>
           <div className="col-12 col-lg-8 ">
             <form onSubmit={formik.handleSubmit}>
               <div className="mb-3 col-12 col-lg-6 ">
@@ -104,7 +104,7 @@ const SignupForm = () => {
                   value={formik.values.location}
                   placeholder="Location"
                   {...formik.getFieldProps("location")}
-                />{" "}
+                />
                 {formik.touched.location && formik.errors.location ? (
                   <div className="text-danger">{formik.errors.location}</div>
                 ) : null}
@@ -124,7 +124,7 @@ const SignupForm = () => {
                   onChange={formik.handleChange}
                   value={formik.values.nameOfApp}
                   {...formik.getFieldProps("nameOfApp")}
-                />{" "}
+                />
                 {formik.touched.nameOfApp && formik.errors.nameOfApp ? (
                   <div className="text-danger">{formik.errors.nameOfApp}</div>
                 ) : null}
@@ -193,7 +193,7 @@ const RequestAccess = () => {
       </Head>
       <div className="container px-5 py-5 ">
         <div className="container px-5 ">
-          <h1 className="fs-3 py-3">BECOME A PARTNER</h1>{" "}
+          <h1 className="fs-3 py-3">BECOME A PARTNER</h1>
           <form onSubmit={formik.handleSubmit}>
             <div className="mb-3 col-12 col-lg-6 ">
               <label htmlFor=" name" className="form-label">
@@ -258,7 +258,7 @@ const RequestAccess = () => {
                 onChange={formik.handleChange}
                 value={formik.values.location}
                 {...formik.getFieldProps("location")}
-              />{" "}
+              />
               {formik.touched.location && formik.errors.location ? (
                 <div className="text-danger">{formik.errors.location}</div>
               ) : null}
@@ -274,7 +274,7 @@ const RequestAccess = () => {
                 onChange={formik.handleChange}
                 value={formik.values.nameOfApp}
                 {...formik.getFieldProps("nameOfApp")}
-              />{" "}
+              />
               {formik.touched.nameOfApp && formik.errors.nameOfApp ? (
                 <div className="text-danger">{formik.errors.nameOfApp}</div>
               ) : null}

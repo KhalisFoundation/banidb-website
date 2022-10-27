@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -24,154 +25,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div className="container-fluid px-0">
-          <div className="">
-            <img
-              src="/assets/Art-The-Golden-temple-Punjab-India-city-river-night-lights-man-people-moon-1.jpg"
-              className="responsive w-100 cover"
-              style={{
-                height: "100vh",
-                width: "100vw",
-              }}
-            />
-            <div className=" header-text ">
-              <div className="animate__animated animate__backInDown carousel-caption text-center w-60 d-flex flex-column align-items-center justify-content-center">
-                <p className="bg-primary rounded-3 h1 py-2 px-md-3">
-                  Single, Universally Accessible, Gurbani Database for Websites
-                  & Applications.
-                </p>
-                <p className="h5 header-content text-dark text-center">
-                  The BaniDB API provides a single source of truth for the next
-                  generation of Gurbani apps and websites, leaving developers to
-                  do what they do best: innovate.
-                </p>
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div> */}
-        {/* <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img
-                src="/assets/Art-The-Golden-temple-Punjab-India-city-river-night-lights-man-people-moon-1.jpg"
-                className="responsive w-100 cover"
-                style={{
-                  height: "90vh",
-                  width: "100vw",
-                }}
-              />
-              <div className="container ">
-                <div className="carousel-caption text-top">
-                  <h1 className="bg-primary">
-                    Single, Universally Accessible, Gurbani Database for
-                    Websites & Applications.
-                  </h1>
-                  <p className="h4">
-                    The BaniDB API provides a single source of truth for the
-                    next generation of Gurbani apps and websites, leaving
-                    developers to do what they do best: innovate.
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="/assets/Art-The-Golden-temple-Punjab-India-city-river-night-lights-man-people-moon-1.jpg"
-                className="responsive w-100 cover"
-                style={{
-                  height: "90vh",
-                  width: "100vw",
-                }}
-              />
-              <div className="container ">
-                <div className="carousel-caption text-top">
-                  <h1 className="bg-primary">
-                    Single, Universally Accessible, Gurbani Database for
-                    Websites & Applications.
-                  </h1>
-                  <p className="h4">
-                    The BaniDB API provides a single source of truth for the
-                    next generation of Gurbani apps and websites, leaving
-                    developers to do what they do best: innovate.
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="/assets/Art-The-Golden-temple-Punjab-India-city-river-night-lights-man-people-moon-1.jpg"
-                className="responsive w-100 cover"
-                style={{
-                  height: "90vh",
-                  width: "100vw",
-                }}
-              />
-              <div className="container ">
-                <div className="carousel-caption text-top">
-                  <h1 className="bg-primary">
-                    Single, Universally Accessible, Gurbani Database for
-                    Websites & Applications.
-                  </h1>
-                  <p className="h4">
-                    The BaniDB API provides a single source of truth for the
-                    next generation of Gurbani apps and websites, leaving
-                    developers to do what they do best: innovate.
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div> */}
+
         <div className="container px-4">
           <div className="row text-left py-4">
             <div className="col-12 col-md-6">
@@ -205,130 +59,124 @@ const Home = () => {
               BaniDB API
             </p>
             <div className="col-12 col-md-6 col-lg-3  py-1">
-              <div class="container1">
+              <div className="container1">
                 <img
                   src="/assets/igurbani.png"
                   alt="Avatar"
-                  class="image"
+                  className="logo text"
                   style={{ width: "100%" }}
                 />
-                <div class="middle">
-                  <div class="middlemiddle">
-                    <a
-                      href="/partners/"
-                      style={{ textDecoration: "none", color: "white" }}
-                    >
-                      <div className="text-center ">
-                        <p className="h4  border-bottom border-3 border-light w-auto">
-                          iGurbani
-                        </p>
+                <div className="middle">
+                  <div className="middlemiddle">
+                    <div className="text-center ">
+                      <p className="h4  border-bottom border-3 border-light w-auto">
+                        iGurbani
+                      </p>
 
-                        <p>
-                         A humble effort by the Akal Design
-                          team to bring the hard work of Baba Darshan Singh
-                          (Mallehwal) int...Detail
-                        </p>
-                        <button className=" btn btn-sm btn-dark">
-                          Details
-                        </button>
-                      </div>
-                    </a>
+                      <p>
+                        A humble effort by the Akal Design team to bring the
+                        hard work of Baba Darshan Singh (Mallehwal)
+                      </p>
+                      <Link href="/partners/igurbani">
+                        <a style={{ textDecoration: "none", color: "white" }}>
+                          <button className=" btn btn-sm btn-dark">
+                            Details
+                          </button>
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-3  py-1">
-              <div class="container1">
+              <div className="container1">
                 <img
                   src="/assets/SikhiToTheMax.png"
                   alt="Avatar"
-                  class="image"
+                  className="logo text"
                   style={{ width: "100%" }}
                 />
-                <div class="middle">
-                  <div class="middlemiddle">
-                    <a
-                      href="/partners/"
-                      style={{ textDecoration: "none", color: "white" }}
-                    >
-                      <div className="text-center ">
-                        <p className="h4  border-bottom border-3 border-light w-">
-                          SIKHITOTHEMAX
-                        </p>
+                <div className="middle">
+                  <div className="middlemiddle">
+                    <div className="text-center ">
+                      <p className="h4  border-bottom border-3 border-light w-">
+                        SIKHITOTHEMAX
+                      </p>
 
-                        <p>
-                          Originally developed by Bhai Tarsem Singh of SHARE
-                          charity UK, SikhiToTheMax has become a defacto st...
-                        </p>
-                        <button className=" btn btn-sm btn-dark">
-                          Details
-                        </button>
-                      </div>
-                    </a>
+                      <p>
+                        Originally developed by Bhai Tarsem Singh of SHARE
+                        charity UK, SikhiToTheMax has become a defacto st
+                      </p>
+                      <Link href="/partners/sikhitothemax">
+                        <a style={{ textDecoration: "none", color: "white" }}>
+                          <button className="btn btn-sm btn-dark">
+                            Details
+                          </button>
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-3  py-1">
-              <div class="container1">
+              <div className="container1">
                 <img
                   src="/assets/shudh_gurbani.png"
                   alt="Avatar"
-                  class="image"
+                  className="logo text"
                   style={{ width: "100%" }}
                 />
-                <div class="middle">
-                  <div class="middlemiddle">
-                    <a
-                      href="/partners/"
-                      style={{ textDecoration: "none", color: "white" }}
-                    >
-                      <div className="text-center ">
-                        <p className="h4  border-bottom border-3 border-light w-">
-                          LEARN SHUDH GURBANI
-                        </p>
-
-                        <p>
-                          Previously known as "Gurbani Unlimited". This app
-                          showcases Bhai Jaswant Singh Ji's (a.k.a Bhagat Ji...
-                        </p>
-                        <button className=" btn btn-sm btn-dark">
-                          Details
-                        </button>
-                      </div>
-                    </a>
+                <div className="middle">
+                  <div className="middlemiddle">
+                    <div className="text-center ">
+                      <p className="h4  border-bottom border-3 border-light w-">
+                        LEARN SHUDH GURBANI
+                      </p>
+                      <p>
+                        Previously known as &quot; Gurbani Unlimited &quot; .
+                        This app showcases Bhai Jaswant Singh Ji&#39;s (a.k.a
+                        Bhagat Ji)
+                      </p>
+                      <Link href="/partners/gurbani-unlimited">
+                        <a style={{ textDecoration: "none", color: "white" }}>
+                          <button className=" btn btn-sm btn-dark">
+                            Details
+                          </button>
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-3  py-1">
-              <div class="container1">
+              <div className="container1">
                 <img
                   src="/assets/Gurbani_Khoji.png"
                   alt="Avatar"
-                  class="image"
+                  className="logo text"
                   style={{ width: "100%" }}
                 />
-                <div class="middle">
-                  <div class="middlemiddle">
-                    <a
-                      href="/partners/"
-                      style={{ textDecoration: "none", color: "white" }}
-                    >
-                      <div className="text-center ">
-                        <p className="h4  border-bottom border-3 border-light w-">
-                          GURBANI KHOJ
-                        </p>
-
-                        <p>
-                          Gurbani Khoj is an application that will provide you
-                          with translations and transliterations of the...
-                        </p>
-                        <button className=" btn btn-sm btn-dark">
-                          Details
-                        </button>
-                      </div>
-                    </a>
+                <div className="middle">
+                  <div className="middlemiddle">
+                    <div className="text-center ">
+                      <p className="h4  border-bottom border-3 border-light w-">
+                        GURBANI KHOJ
+                      </p>
+                      <p>
+                        Gurbani Khoj is an application that will provide you
+                        with translations and transliterations of the
+                      </p>
+                      <Link href="/partners/gurbani-khoj">
+                        <a style={{ textDecoration: "none", color: "white" }}>
+                          <button className=" btn btn-sm btn-dark">
+                            Details
+                          </button>
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -336,7 +184,7 @@ const Home = () => {
           </div>
         </div>
         {/* API Stats */}
-        <div className="container-fluid api-section px-4 py-5 ">
+        <div className="container-fluid api-section px-4 py-4 ">
           <div className="container px-4 bg-dark bg-opacity-50">
             <div className="row  px-4 text-light">
               <p className="fs-2 text-center py-3 "> API STATS</p>

@@ -31,7 +31,7 @@ function footer() {
                     Privacy Policy
                   </a>
                 </Link>
-              </li>{" "}
+              </li>
               <li className="nav-item mb-2">
                 <Link href="/nposl">
                   <a
@@ -41,7 +41,7 @@ function footer() {
                     Non-Profit Open Software License 3.0 (NPOSL-3.0)
                   </a>
                 </Link>
-              </li>{" "}
+              </li>
               <li className="nav-item mb-2">
                 <Link href="/contact">
                   <a
@@ -51,7 +51,7 @@ function footer() {
                     Contact
                   </a>
                 </Link>
-              </li>{" "}
+              </li>
               <li className="nav-item mb-2">
                 <Link href="/about">
                   <a
@@ -72,7 +72,7 @@ function footer() {
             </p>
           </ul>
         </footer>
-      </div>{" "}
+      </div>
     </div>
   );
 }

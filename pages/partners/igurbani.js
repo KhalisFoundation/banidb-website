@@ -21,13 +21,13 @@ function igurbani() {
             </p>
             <span className="d-flex inline-block py-1">
               <p className="fw-bold">
-                Website :{" "}
+                Website :
                 <a href="http://www.igurbani.com">http://www.igurbani.com</a>
               </p>
             </span>
             <span className="d-flex inline-block py-1">
               <p className="fw-bold">
-                Developer : Akal Design{" "}
+                Developer : Akal Design
                 <a href="http://www.igurbani.com">http://www.akaldesign.com</a>
               </p>
             </span>

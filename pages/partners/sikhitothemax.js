@@ -24,7 +24,7 @@ function sikhitothemax() {
             </p>
             <span className="d-flex inline-block py-1">
               <p className="fw-bold">
-                Website : {" "}
+                Website : 
                 <a href="http://www.SikhiToTheMax.org">
                   http://www.SikhiToTheMax.org
                 </a>
@@ -32,7 +32,7 @@ function sikhitothemax() {
             </span>
             <span className="d-flex inline-block py-1">
               <p className="fw-bold">
-                Developer : {" "}
+                Developer : 
                 <a href="http://www.khalisfoundation.org/">Khalis Foundation</a>
               </p>
             </span>

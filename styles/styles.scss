@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+
 body {
   font-family: "Mulish", sans-serif;
   font-weight: 350;
@@ -25,13 +26,16 @@ $theme-colors: (
 .carousel-item {
   height: 350px !important;
 }
+
 .header-text {
   width: 60vw;
 }
+
 .header-content {
   text-shadow: #001738 0px 0px 10px 0px;
   width: 50vw;
 }
+
 .api-section {
   background-image: url("/assets//API-section-background.jpeg");
   background-size: cover;
@@ -40,10 +44,12 @@ $theme-colors: (
   //   opacity: 0.4;
   background-attachment: scroll;
 }
+
 .nav-link:hover {
   background-color: $primary;
-  color: $light !important;
+  color: $light  !important;
 }
+
 .hero {
   background-image: url("/assets/Art-The-Golden-temple-Punjab-India-city-river-night-lights-man-people-moon-1.jpg");
   background-size: cover;
@@ -51,6 +57,7 @@ $theme-colors: (
   background-position: center;
   height: 100vh;
 }
+
 .hero-text {
   display: flex;
   align-items: center;
@@ -59,26 +66,31 @@ $theme-colors: (
   padding-left: 2vw;
   padding-right: 2vw;
 }
+
 @media (max-width: 768px) {
   #navbarScroll {
-    background-color: $primary !important;
+    background-color: $primary  !important;
   }
+
   .nav-link {
-    color: $light !important;
+    color: $light  !important;
   }
 }
+
 @media (min-width: 769px) {
   #navbarScrollingDropdown {
-    color: $dark !important;
+    color: $dark  !important;
   }
+
   .nav-link {
-    color: $dark !important;
+    color: $dark  !important;
   }
 }
 
 .dropdown-menu {
-  background-color: $light !important;
+  background-color: $light  !important;
 }
+
 .dropdown-item {
   padding-top: 4px !important;
   padding-bottom: 4px !important;
@@ -86,8 +98,9 @@ $theme-colors: (
 
 #navbarScrollingDropdown:hover {
   background-color: $primary;
-  color: $light !important;
+  color: $light  !important;
 }
+
 @media (min-width: 768px) {
   .hero-text {
     display: flex;
@@ -98,12 +111,14 @@ $theme-colors: (
     padding-right: 20vw;
   }
 }
+
 @media (max-wid: 768px) {
   .navbar-collapse {
-    background-color: $primary !important;
-    color: $light !important;
+    background-color: $primary  !important;
+    color: $light  !important;
   }
 }
+
 .carousel-caption::before {
   content: url("/assets/quote.svg");
   // background-color: #001738
@@ -152,6 +167,7 @@ img[alt="IMAGE ALT TEXT HERE"] {
 .container1:hover .middle {
   opacity: 1;
 }
+
 .middlemiddle {
   background: #ff8707;
   color: white;
