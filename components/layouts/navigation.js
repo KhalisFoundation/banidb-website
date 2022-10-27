@@ -27,42 +27,63 @@ function NavScrollExample() {
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ms-auto my-2 my-lg-0 px-0 text-center">
             <Link href="/" passHref>
-              <Nav.Link className=" px-3 fw-semibold   ">
-                HOME
+              <Nav.Link
+                className=" px-3 
+                 "
+              >
+                <strong>HOME</strong>
               </Nav.Link>
             </Link>
 
-            <Nav.Link className="pt-0 fw-semibold   ">
+            <Nav.Link
+              className="pt-0 
+               "
+            >
               <Link href="/partners" passHref>
                 <NavDropdown
                   title="PARTNERS"
                   id="navbarScrollingDropdown"
-                  className=" fw-semibold   "
+                  className="                     "
                 >
                   <Link href="/partners/igurbani" passHref>
-                    <NavDropdown.Item className="py-2 px-3 fw-semibold   ">
-                      iGurbani
+                    <NavDropdown.Item
+                      className="
+                       "
+                    >
+                      <strong>iGurbani</strong>
                     </NavDropdown.Item>
                   </Link>
 
                   <Link href="/partners/sikhitothemax" passHref>
-                    <NavDropdown.Item className="py-2 px-3 fw-semibold   ">
-                      SikhiToTheMax
+                    <NavDropdown.Item
+                      className="
+                       "
+                    >
+                      <strong>SikhiToTheMax</strong>
                     </NavDropdown.Item>
                   </Link>
                   <Link href="/partners/gurbani-unlimited" passHref>
-                    <NavDropdown.Item className="py-2 px-3 fw-semibold   ">
-                      Learn Shudh Gurbani
+                    <NavDropdown.Item
+                      className="
+                       "
+                    >
+                      <strong>Learn Shudh Gurbani</strong>
                     </NavDropdown.Item>
                   </Link>
                   <Link href="/partners/share-charity" passHref>
-                    <NavDropdown.Item className="py-2 px-3 fw-semibold   ">
-                      SHARE Charity
+                    <NavDropdown.Item
+                      className="
+                       "
+                    >
+                      <strong>SHARE Charity</strong>
                     </NavDropdown.Item>
                   </Link>
                   <Link href="/partners/khalis-foundation" passHref>
-                    <NavDropdown.Item className="py-2 px-3 fw-semibold   ">
-                      Khalis Foundation
+                    <NavDropdown.Item
+                      className="
+                       "
+                    >
+                      <strong>Khalis Foundation</strong>
                     </NavDropdown.Item>
                   </Link>
                 </NavDropdown>
@@ -70,18 +91,27 @@ function NavScrollExample() {
             </Nav.Link>
 
             <Link href="/about" passHref>
-              <Nav.Link className="px-3  fw-semibold   ">
-                ABOUT
+              <Nav.Link
+                className="px-3  
+                 "
+              >
+                <strong>ABOUT</strong>
               </Nav.Link>
             </Link>
             <Link href="/contact" passHref>
-              <Nav.Link className="px-3  fw-semibold   ">
-                CONTACT
+              <Nav.Link
+                className="px-3  
+                 "
+              >
+                <strong>CONTACT</strong>
               </Nav.Link>
             </Link>
             <Link href="/request-access" passHref>
-              <Nav.Link className="px-3  fw-semibold   ">
-                BECOME A PARTNER
+              <Nav.Link
+                className="px-3  
+                 "
+              >
+                <strong> BECOME A PARTNER</strong>
               </Nav.Link>
             </Link>
           </Nav>

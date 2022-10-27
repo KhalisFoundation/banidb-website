@@ -9,8 +9,10 @@ function PageTemplate({ children }) {
   return (
     <>
       <div className="ccontainer-fluid">
-        <Navigation />
-        {children}
+        <Navigation /><main className="bg-secondary">
+           {children}
+        </main>
+       
         <Footer  />
       </div>
     </>

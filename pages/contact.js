@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Head from "next/head";
 
 const SignupForm = () => {
+  const form = useRef();
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -12,15 +15,30 @@ const SignupForm = () => {
       message: "",
     },
     validationSchema: Yup.object({
-      name: Yup.string().required("Field is Required"),
+      name: Yup.string().required("Required"),
 
       email: Yup.string()
         .email("Invalid email address")
         .required("Email Required"),
     }),
 
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: ({ name, email, subject, message }, { resetForm }) => {
+      emailjs
+        .sendForm(
+          "service_5k4pz01",
+          "template_ssntq3l",
+          form.current,
+          "user_aVMjgLam4rroy8ETgabF9"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      resetForm({ name: "", email: "", subject: "", message: "" });
     },
   });
   return (
@@ -29,10 +47,10 @@ const SignupForm = () => {
         <title> Contact -- BANIDB.com</title>
       </Head>
       <div className="container px-4 py-5 ">
-        <div className="container row pt-4">
-          <h1 className="fs-3 py-3 text-center">CONTACT</h1>
+        <div className="container row pt-5">
+          <h1 className="fs-3 py-2 text-center">CONTACT</h1>
           <div className="col-12 col-lg-8 ">
-            <form onSubmit={formik.handleSubmit}>
+            <form onSubmit={formik.handleSubmit} ref={form}>
               <div className="mb-3 col-12 col-lg-6 ">
                 <label htmlFor=" name" className="form-label">
                   Your Name <span className="text-danger">*</span>
@@ -77,6 +95,9 @@ const SignupForm = () => {
                 <input
                   name="subject"
                   type="text"
+                  onChange={formik.handleChange}
+                  value={formik.values.subject}
+                  {...formik.getFieldProps("subject")}
                   placeholder="Subject"
                   className=" form-control   px-2 py-2"
                 />
@@ -92,6 +113,10 @@ const SignupForm = () => {
                   name="message"
                   className="form-control    "
                   rows="6"
+                  type="text"
+                  onChange={formik.handleChange}
+                  value={formik.values.message}
+                  {...formik.getFieldProps("message")}
                   placeholder="Write your message"
                 ></textarea>
               </div>

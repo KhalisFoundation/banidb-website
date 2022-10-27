@@ -11,10 +11,10 @@ $success: #2ecc40;
 $warning: #ff851b;
 $light: #f4f4f4;
 $dark: #111;
-$secondary: #111;
+$secondary: rgb(148, 103, 103);
 $theme-colors: (
   "primary": #ff8707,
-  "secondary": #833bec,
+  "secondary": #f9f9f9,
   "success": #1ce1ac,
   "info": #ff7d50,
   "warning": #ffbe0b,
@@ -47,7 +47,7 @@ $theme-colors: (
 
 .nav-link:hover {
   background-color: $primary;
-  color: $light  !important;
+  color: $light !important;
 }
 
 .hero {
@@ -68,37 +68,47 @@ $theme-colors: (
 }
 
 @media (max-width: 768px) {
+  #navbarScrollingDropdown {
+    font-weight: bold !important;
+  }
   #navbarScroll {
-    background-color: $primary  !important;
+    background-color: $primary !important;
   }
 
   .nav-link {
-    color: $light  !important;
+    color: $light !important;
+  }
+  .dropdown-menu.show {
+    text-align: center !important;
   }
 }
 
 @media (min-width: 769px) {
   #navbarScrollingDropdown {
-    color: $dark  !important;
+    color: $dark !important;
+    font-weight: bold !important;
   }
+  .dropdown-menu.show {
+    display: block;
+    background: white !important;
+    font-family: "'Oswald', sans-serif" !important;
 
+  }
   .nav-link {
-    color: $dark  !important;
+    color: $dark !important;
+    font-family: "'Oswald', sans-serif" !important;
   }
-}
-
-.dropdown-menu {
-  background-color: $light  !important;
 }
 
 .dropdown-item {
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
+  line-height: 1.5 !important;
+  padding: 10px 15px !important;
+  font-size: 14px !important;
 }
 
 #navbarScrollingDropdown:hover {
   background-color: $primary;
-  color: $light  !important;
+  color: $light !important;
 }
 
 @media (min-width: 768px) {
@@ -114,9 +124,12 @@ $theme-colors: (
 
 @media (max-wid: 768px) {
   .navbar-collapse {
-    background-color: $primary  !important;
-    color: $light  !important;
+    background-color: $primary !important;
+    color: $light !important;
   }
+}
+.dropdown-menu {
+  background: $light !important;
 }
 
 .carousel-caption::before {

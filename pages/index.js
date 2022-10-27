@@ -16,7 +16,7 @@ const Home = () => {
                 Single, Universally Accessible, Gurbani Database for Websites &
                 Applications.
               </p>
-              <p className="h5 px-3 py-3 text-dark fw-bold text-center">
+              <p className="h5 px-5 py-3 text-dark fw-bold text-center">
                 The BaniDB API provides a single source of truth for the next
                 generation of Gurbani apps and websites, leaving developers to
                 do what they do best: innovate.
