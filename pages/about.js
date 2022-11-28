@@ -24,7 +24,7 @@ export default function about({ data }) {
 }
 export async function getStaticProps() {
   let res = await axios.get(
-    "https://raw.githubusercontent.com/abdulwaqar844/TS/main/README.md"
+    "https://raw.githubusercontent.com/KhalisFoundation/banidb-website/main/README.md"
   );
   let { content } = matter(res.data);
 
