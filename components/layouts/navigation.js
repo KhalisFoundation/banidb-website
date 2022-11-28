@@ -46,43 +46,28 @@ function NavScrollExample() {
                   className="                     "
                 >
                   <Link href="/partners/igurbani" passHref>
-                    <NavDropdown.Item
-                      className="
-                       "
-                    >
+                    <NavDropdown.Item>
                       <strong>iGurbani</strong>
                     </NavDropdown.Item>
                   </Link>
 
                   <Link href="/partners/sikhitothemax" passHref>
-                    <NavDropdown.Item
-                      className="
-                       "
-                    >
+                    <NavDropdown.Item>
                       <strong>SikhiToTheMax</strong>
                     </NavDropdown.Item>
                   </Link>
                   <Link href="/partners/gurbani-unlimited" passHref>
-                    <NavDropdown.Item
-                      className="
-                       "
-                    >
+                    <NavDropdown.Item>
                       <strong>Learn Shudh Gurbani</strong>
                     </NavDropdown.Item>
                   </Link>
                   <Link href="/partners/share-charity" passHref>
-                    <NavDropdown.Item
-                      className="
-                       "
-                    >
+                    <NavDropdown.Item>
                       <strong>SHARE Charity</strong>
                     </NavDropdown.Item>
                   </Link>
                   <Link href="/partners/khalis-foundation" passHref>
-                    <NavDropdown.Item
-                      className="
-                       "
-                    >
+                    <NavDropdown.Item>
                       <strong>Khalis Foundation</strong>
                     </NavDropdown.Item>
                   </Link>
@@ -91,26 +76,17 @@ function NavScrollExample() {
             </Nav.Link>
 
             <Link href="/about" passHref>
-              <Nav.Link
-                className="px-3  
-                 "
-              >
+              <Nav.Link className="px-3 ">
                 <strong>ABOUT</strong>
               </Nav.Link>
             </Link>
             <Link href="/contact" passHref>
-              <Nav.Link
-                className="px-3  
-                 "
-              >
+              <Nav.Link className="px-3 ">
                 <strong>CONTACT</strong>
               </Nav.Link>
             </Link>
             <Link href="/request-access" passHref>
-              <Nav.Link
-                className="px-3  
-                 "
-              >
+              <Nav.Link className="px-3 ">
                 <strong> BECOME A PARTNER</strong>
               </Nav.Link>
             </Link>
